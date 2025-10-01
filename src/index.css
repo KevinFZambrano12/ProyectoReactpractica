@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Contenedor principal */
+.app-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Botón */
+button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+/* Estilos de componentes */
+.componente {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Colores distintos para cada componente */
+.componente1 {
+  background: #ffe082;
+}
+
+.componente2 {
+  background: #80deea;
+}
+
+.componente3 {
+  background: #a5d6a7;
+}
