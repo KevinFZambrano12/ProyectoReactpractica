@@ -13,16 +13,17 @@ function App() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const res = await axios.get("apijavaspringproject-production.up.railway.app/api/productos");
+        const res = await axios.get("https://apijavaspringproject-production.up.railway.app/api/productos");
         setProductos(res.data);
       } catch (err) {
         setError("No se pudo conectar con la API 😥");
         console.error(err);
+        console.log(err);
       } finally {
         setLoading(false);
       }
     };
-    
+
     fetchProductos();
   }, []);
 
